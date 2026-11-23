@@ -1,0 +1,854 @@
+{
+  "floating_base_joint": {
+    "type": "free",
+    "body": "pelvis",
+    "qpos_index": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "qvel_index": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "link_mass": 1.71,
+    "subtree_mass": 14.14318,
+    "range": null,
+    "armature": 0.0,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "actuators": [],
+    "qpos_labels": [
+      "x",
+      "y",
+      "z",
+      "quat_w",
+      "quat_x",
+      "quat_y",
+      "quat_z"
+    ],
+    "qvel_labels": [
+      "vx",
+      "vy",
+      "vz",
+      "wx",
+      "wy",
+      "wz"
+    ],
+    "obs_pos_index": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "obs_vel_index": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37
+    ]
+  },
+  "left_hip_pitch_joint": {
+    "type": "hinge",
+    "body": "left_hip_pitch_link",
+    "qpos_index": 7,
+    "qvel_index": 6,
+    "link_mass": 0.5916,
+    "subtree_mass": 3.7992000000000004,
+    "range": [
+      -2.5307,
+      2.8798
+    ],
+    "armature": 0.02,
+    "damping": 0.1,
+    "frictionloss": 0.3,
+    "actuators": [
+      {
+        "index": 0,
+        "name": "left_hip_pitch",
+        "via": "direct",
+        "ctrlrange": [
+          -23.1,
+          23.1
+        ]
+      }
+    ],
+    "obs_pos_index": 5,
+    "obs_vel_index": 38
+  },
+  "left_hip_roll_joint": {
+    "type": "hinge",
+    "body": "left_hip_roll_link",
+    "qpos_index": 8,
+    "qvel_index": 7,
+    "link_mass": 0.772,
+    "subtree_mass": 3.2076000000000002,
+    "range": [
+      -0.5236,
+      2.9671
+    ],
+    "armature": 0.02,
+    "damping": 0.1,
+    "frictionloss": 0.3,
+    "actuators": [
+      {
+        "index": 1,
+        "name": "left_hip_roll",
+        "via": "direct",
+        "ctrlrange": [
+          -23.1,
+          23.1
+        ]
+      }
+    ],
+    "obs_pos_index": 6,
+    "obs_vel_index": 39
+  },
+  "left_hip_yaw_joint": {
+    "type": "hinge",
+    "body": "left_hip_yaw_link",
+    "qpos_index": 9,
+    "qvel_index": 8,
+    "link_mass": 1.0476,
+    "subtree_mass": 2.4356,
+    "range": [
+      -2.7576,
+      2.7576
+    ],
+    "armature": 0.02,
+    "damping": 0.1,
+    "frictionloss": 0.3,
+    "actuators": [
+      {
+        "index": 2,
+        "name": "left_hip_yaw",
+        "via": "direct",
+        "ctrlrange": [
+          -23.1,
+          23.1
+        ]
+      }
+    ],
+    "obs_pos_index": 7,
+    "obs_vel_index": 40
+  },
+  "left_knee_joint": {
+    "type": "hinge",
+    "body": "left_knee_link",
+    "qpos_index": 10,
+    "qvel_index": 9,
+    "link_mass": 1.1487,
+    "subtree_mass": 1.3880000000000001,
+    "range": [
+      -0.087267,
+      2.8798
+    ],
+    "armature": 0.02,
+    "damping": 0.1,
+    "frictionloss": 0.3,
+    "actuators": [
+      {
+        "index": 3,
+        "name": "left_knee",
+        "via": "direct",
+        "ctrlrange": [
+          -23.1,
+          23.1
+        ]
+      }
+    ],
+    "obs_pos_index": 8,
+    "obs_vel_index": 41
+  },
+  "left_ankle_pitch_joint": {
+    "type": "hinge",
+    "body": "left_ankle_pitch_link",
+    "qpos_index": 11,
+    "qvel_index": 10,
+    "link_mass": 0.074,
+    "subtree_mass": 0.2393,
+    "range": [
+      -0.87267,
+      0.5236
+    ],
+    "armature": 0.02884,
+    "damping": 0.1442,
+    "frictionloss": 0.5095,
+    "actuators": [
+      {
+        "index": 9,
+        "name": "left_ankle_A",
+        "via": "tendon left_ankle_A (coef +0.8494)",
+        "ctrlrange": [
+          -23.1,
+          23.1
+        ]
+      },
+      {
+        "index": 10,
+        "name": "left_ankle_B",
+        "via": "tendon left_ankle_B (coef -0.8489)",
+        "ctrlrange": [
+          -23.1,
+          23.1
+        ]
+      }
+    ],
+    "obs_pos_index": 9,
+    "obs_vel_index": 42
+  },
+  "left_ankle_roll_joint": {
+    "type": "hinge",
+    "body": "left_ankle_roll_link",
+    "qpos_index": 12,
+    "qvel_index": 11,
+    "link_mass": 0.1653,
+    "subtree_mass": 0.1653,
+    "range": [
+      -0.2618,
+      0.2618
+    ],
+    "armature": 0.02902,
+    "damping": 0.1451,
+    "frictionloss": 0.5111,
+    "actuators": [
+      {
+        "index": 9,
+        "name": "left_ankle_A",
+        "via": "tendon left_ankle_A (coef +0.8577)",
+        "ctrlrange": [
+          -23.1,
+          23.1
+        ]
+      },
+      {
+        "index": 10,
+        "name": "left_ankle_B",
+        "via": "tendon left_ankle_B (coef +0.8458)",
+        "ctrlrange": [
+          -23.1,
+          23.1
+        ]
+      }
+    ],
+    "obs_pos_index": 10,
+    "obs_vel_index": 43
+  },
+  "right_hip_pitch_joint": {
+    "type": "hinge",
+    "body": "right_hip_pitch_link",
+    "qpos_index": 13,
+    "qvel_index": 12,
+    "link_mass": 0.5916,
+    "subtree_mass": 3.7992000000000004,
+    "range": [
+      -2.5307,
+      2.8798
+    ],
+    "armature": 0.02,
+    "damping": 0.1,
+    "frictionloss": 0.3,
+    "actuators": [
+      {
+        "index": 4,
+        "name": "right_hip_pitch",
+        "via": "direct",
+        "ctrlrange": [
+          -23.1,
+          23.1
+        ]
+      }
+    ],
+    "obs_pos_index": 11,
+    "obs_vel_index": 44
+  },
+  "right_hip_roll_joint": {
+    "type": "hinge",
+    "body": "right_hip_roll_link",
+    "qpos_index": 14,
+    "qvel_index": 13,
+    "link_mass": 0.772,
+    "subtree_mass": 3.2076000000000002,
+    "range": [
+      -2.9671,
+      0.5236
+    ],
+    "armature": 0.02,
+    "damping": 0.1,
+    "frictionloss": 0.3,
+    "actuators": [
+      {
+        "index": 5,
+        "name": "right_hip_roll",
+        "via": "direct",
+        "ctrlrange": [
+          -23.1,
+          23.1
+        ]
+      }
+    ],
+    "obs_pos_index": 12,
+    "obs_vel_index": 45
+  },
+  "right_hip_yaw_joint": {
+    "type": "hinge",
+    "body": "right_hip_yaw_link",
+    "qpos_index": 15,
+    "qvel_index": 14,
+    "link_mass": 1.0476,
+    "subtree_mass": 2.4356,
+    "range": [
+      -2.7576,
+      2.7576
+    ],
+    "armature": 0.02,
+    "damping": 0.1,
+    "frictionloss": 0.3,
+    "actuators": [
+      {
+        "index": 6,
+        "name": "right_hip_yaw",
+        "via": "direct",
+        "ctrlrange": [
+          -23.1,
+          23.1
+        ]
+      }
+    ],
+    "obs_pos_index": 13,
+    "obs_vel_index": 46
+  },
+  "right_knee_joint": {
+    "type": "hinge",
+    "body": "right_knee_link",
+    "qpos_index": 16,
+    "qvel_index": 15,
+    "link_mass": 1.1487,
+    "subtree_mass": 1.3880000000000001,
+    "range": [
+      -0.087267,
+      2.8798
+    ],
+    "armature": 0.02,
+    "damping": 0.1,
+    "frictionloss": 0.3,
+    "actuators": [
+      {
+        "index": 7,
+        "name": "right_knee",
+        "via": "direct",
+        "ctrlrange": [
+          -23.1,
+          23.1
+        ]
+      }
+    ],
+    "obs_pos_index": 14,
+    "obs_vel_index": 47
+  },
+  "right_ankle_pitch_joint": {
+    "type": "hinge",
+    "body": "right_ankle_pitch_link",
+    "qpos_index": 17,
+    "qvel_index": 16,
+    "link_mass": 0.074,
+    "subtree_mass": 0.2393,
+    "range": [
+      -0.87267,
+      0.5236
+    ],
+    "armature": 0.02884,
+    "damping": 0.1442,
+    "frictionloss": 0.5095,
+    "actuators": [
+      {
+        "index": 11,
+        "name": "right_ankle_A",
+        "via": "tendon right_ankle_A (coef +0.8494)",
+        "ctrlrange": [
+          -23.1,
+          23.1
+        ]
+      },
+      {
+        "index": 12,
+        "name": "right_ankle_B",
+        "via": "tendon right_ankle_B (coef -0.8489)",
+        "ctrlrange": [
+          -23.1,
+          23.1
+        ]
+      }
+    ],
+    "obs_pos_index": 15,
+    "obs_vel_index": 48
+  },
+  "right_ankle_roll_joint": {
+    "type": "hinge",
+    "body": "right_ankle_roll_link",
+    "qpos_index": 18,
+    "qvel_index": 17,
+    "link_mass": 0.1653,
+    "subtree_mass": 0.1653,
+    "range": [
+      -0.2618,
+      0.2618
+    ],
+    "armature": 0.02902,
+    "damping": 0.1451,
+    "frictionloss": 0.5111,
+    "actuators": [
+      {
+        "index": 11,
+        "name": "right_ankle_A",
+        "via": "tendon right_ankle_A (coef -0.8577)",
+        "ctrlrange": [
+          -23.1,
+          23.1
+        ]
+      },
+      {
+        "index": 12,
+        "name": "right_ankle_B",
+        "via": "tendon right_ankle_B (coef -0.8458)",
+        "ctrlrange": [
+          -23.1,
+          23.1
+        ]
+      }
+    ],
+    "obs_pos_index": 16,
+    "obs_vel_index": 49
+  },
+  "waist_yaw_joint": {
+    "type": "hinge",
+    "body": "waist_yaw_link",
+    "qpos_index": 19,
+    "qvel_index": 18,
+    "link_mass": 0.1389,
+    "subtree_mass": 4.8347799999999985,
+    "range": [
+      -2.618,
+      2.618
+    ],
+    "armature": 0.02,
+    "damping": 0.1,
+    "frictionloss": 0.3,
+    "actuators": [
+      {
+        "index": 8,
+        "name": "waist_yaw",
+        "via": "direct",
+        "ctrlrange": [
+          -23.1,
+          23.1
+        ]
+      }
+    ],
+    "obs_pos_index": 17,
+    "obs_vel_index": 50
+  },
+  "left_shoulder_pitch_joint": {
+    "type": "hinge",
+    "body": "left_shoulder_pitch_link",
+    "qpos_index": 20,
+    "qvel_index": 19,
+    "link_mass": 0.20254,
+    "subtree_mass": 1.0311599999999999,
+    "range": [
+      -2.5656,
+      2.1468
+    ],
+    "armature": 0.005,
+    "damping": 0.15,
+    "frictionloss": 0.03,
+    "actuators": [
+      {
+        "index": 13,
+        "name": "left_shoulder_pitch",
+        "via": "direct",
+        "ctrlrange": [
+          -2.5656,
+          2.1468
+        ]
+      }
+    ],
+    "obs_pos_index": 18,
+    "obs_vel_index": 51
+  },
+  "left_shoulder_roll_joint": {
+    "type": "hinge",
+    "body": "left_shoulder_roll_link",
+    "qpos_index": 21,
+    "qvel_index": 20,
+    "link_mass": 0.12406,
+    "subtree_mass": 0.8286199999999999,
+    "range": [
+      -1.5882,
+      2.2515
+    ],
+    "armature": 0.005,
+    "damping": 0.15,
+    "frictionloss": 0.03,
+    "actuators": [
+      {
+        "index": 14,
+        "name": "left_shoulder_roll",
+        "via": "direct",
+        "ctrlrange": [
+          -1.5882,
+          2.2515
+        ]
+      }
+    ],
+    "obs_pos_index": 19,
+    "obs_vel_index": 52
+  },
+  "left_shoulder_yaw_joint": {
+    "type": "hinge",
+    "body": "left_shoulder_yaw_link",
+    "qpos_index": 22,
+    "qvel_index": 21,
+    "link_mass": 0.27175,
+    "subtree_mass": 0.7045599999999999,
+    "range": [
+      -1.5708,
+      1.5708
+    ],
+    "armature": 0.0008,
+    "damping": 0.025,
+    "frictionloss": 0.006,
+    "actuators": [
+      {
+        "index": 15,
+        "name": "left_shoulder_yaw",
+        "via": "direct",
+        "ctrlrange": [
+          -1.5708,
+          1.5708
+        ]
+      }
+    ],
+    "obs_pos_index": 20,
+    "obs_vel_index": 53
+  },
+  "left_elbow_joint": {
+    "type": "hinge",
+    "body": "left_elbow_link",
+    "qpos_index": 23,
+    "qvel_index": 22,
+    "link_mass": 0.14367,
+    "subtree_mass": 0.4328099999999999,
+    "range": [
+      -1.0472,
+      2.0944
+    ],
+    "armature": 0.005,
+    "damping": 0.15,
+    "frictionloss": 0.03,
+    "actuators": [
+      {
+        "index": 16,
+        "name": "left_elbow",
+        "via": "direct",
+        "ctrlrange": [
+          -1.0472,
+          2.0944
+        ]
+      }
+    ],
+    "obs_pos_index": 21,
+    "obs_vel_index": 54
+  },
+  "left_wrist_roll_joint": {
+    "type": "hinge",
+    "body": "left_wrist_roll_link",
+    "qpos_index": 24,
+    "qvel_index": 23,
+    "link_mass": 0.02396,
+    "subtree_mass": 0.28913999999999995,
+    "range": [
+      -1.3963,
+      1.3963
+    ],
+    "armature": 0.0006,
+    "damping": 0.02,
+    "frictionloss": 0.005,
+    "actuators": [
+      {
+        "index": 17,
+        "name": "left_wrist_roll",
+        "via": "direct",
+        "ctrlrange": [
+          -1.3963,
+          1.3963
+        ]
+      }
+    ],
+    "obs_pos_index": 22,
+    "obs_vel_index": 55
+  },
+  "left_wrist_pitch_joint": {
+    "type": "hinge",
+    "body": "left_wrist_pitch_link",
+    "qpos_index": 25,
+    "qvel_index": 24,
+    "link_mass": 0.15117,
+    "subtree_mass": 0.26517999999999997,
+    "range": [
+      -1.3963,
+      1.3963
+    ],
+    "armature": 0.0006,
+    "damping": 0.02,
+    "frictionloss": 0.005,
+    "actuators": [
+      {
+        "index": 18,
+        "name": "left_wrist_pitch",
+        "via": "direct",
+        "ctrlrange": [
+          -1.3963,
+          1.3963
+        ]
+      }
+    ],
+    "obs_pos_index": 23,
+    "obs_vel_index": 56
+  },
+  "left_wrist_yaw_joint": {
+    "type": "hinge",
+    "body": "left_wrist_yaw_link",
+    "qpos_index": 26,
+    "qvel_index": 25,
+    "link_mass": 0.11401,
+    "subtree_mass": 0.11401,
+    "range": [
+      -1.3963,
+      1.3963
+    ],
+    "armature": 0.0006,
+    "damping": 0.02,
+    "frictionloss": 0.005,
+    "actuators": [
+      {
+        "index": 19,
+        "name": "left_wrist_yaw",
+        "via": "direct",
+        "ctrlrange": [
+          -1.3963,
+          1.3963
+        ]
+      }
+    ],
+    "obs_pos_index": 24,
+    "obs_vel_index": 57
+  },
+  "right_shoulder_pitch_joint": {
+    "type": "hinge",
+    "body": "right_shoulder_pitch_link",
+    "qpos_index": 27,
+    "qvel_index": 26,
+    "link_mass": 0.20253,
+    "subtree_mass": 1.03112,
+    "range": [
+      -2.5656,
+      2.1468
+    ],
+    "armature": 0.005,
+    "damping": 0.15,
+    "frictionloss": 0.03,
+    "actuators": [
+      {
+        "index": 20,
+        "name": "right_shoulder_pitch",
+        "via": "direct",
+        "ctrlrange": [
+          -2.5656,
+          2.1468
+        ]
+      }
+    ],
+    "obs_pos_index": 25,
+    "obs_vel_index": 58
+  },
+  "right_shoulder_roll_joint": {
+    "type": "hinge",
+    "body": "right_shoulder_roll_link",
+    "qpos_index": 28,
+    "qvel_index": 27,
+    "link_mass": 0.12405,
+    "subtree_mass": 0.8285899999999999,
+    "range": [
+      -2.2515,
+      1.5882
+    ],
+    "armature": 0.005,
+    "damping": 0.15,
+    "frictionloss": 0.03,
+    "actuators": [
+      {
+        "index": 21,
+        "name": "right_shoulder_roll",
+        "via": "direct",
+        "ctrlrange": [
+          -2.2515,
+          1.5882
+        ]
+      }
+    ],
+    "obs_pos_index": 26,
+    "obs_vel_index": 59
+  },
+  "right_shoulder_yaw_joint": {
+    "type": "hinge",
+    "body": "right_shoulder_yaw_link",
+    "qpos_index": 29,
+    "qvel_index": 28,
+    "link_mass": 0.27175,
+    "subtree_mass": 0.7045399999999999,
+    "range": [
+      -1.5708,
+      1.5708
+    ],
+    "armature": 0.0008,
+    "damping": 0.025,
+    "frictionloss": 0.006,
+    "actuators": [
+      {
+        "index": 22,
+        "name": "right_shoulder_yaw",
+        "via": "direct",
+        "ctrlrange": [
+          -1.5708,
+          1.5708
+        ]
+      }
+    ],
+    "obs_pos_index": 27,
+    "obs_vel_index": 60
+  },
+  "right_elbow_joint": {
+    "type": "hinge",
+    "body": "right_elbow_link",
+    "qpos_index": 30,
+    "qvel_index": 29,
+    "link_mass": 0.14367,
+    "subtree_mass": 0.43279,
+    "range": [
+      -1.0472,
+      2.0944
+    ],
+    "armature": 0.005,
+    "damping": 0.15,
+    "frictionloss": 0.03,
+    "actuators": [
+      {
+        "index": 23,
+        "name": "right_elbow",
+        "via": "direct",
+        "ctrlrange": [
+          -1.0472,
+          2.0944
+        ]
+      }
+    ],
+    "obs_pos_index": 28,
+    "obs_vel_index": 61
+  },
+  "right_wrist_roll_joint": {
+    "type": "hinge",
+    "body": "right_wrist_roll_link",
+    "qpos_index": 31,
+    "qvel_index": 30,
+    "link_mass": 0.02396,
+    "subtree_mass": 0.28912,
+    "range": [
+      -1.3963,
+      1.3963
+    ],
+    "armature": 0.0006,
+    "damping": 0.02,
+    "frictionloss": 0.005,
+    "actuators": [
+      {
+        "index": 24,
+        "name": "right_wrist_roll",
+        "via": "direct",
+        "ctrlrange": [
+          -1.3963,
+          1.3963
+        ]
+      }
+    ],
+    "obs_pos_index": 29,
+    "obs_vel_index": 62
+  },
+  "right_wrist_pitch_joint": {
+    "type": "hinge",
+    "body": "right_wrist_pitch_link",
+    "qpos_index": 32,
+    "qvel_index": 31,
+    "link_mass": 0.15116,
+    "subtree_mass": 0.26516,
+    "range": [
+      -1.3963,
+      1.3963
+    ],
+    "armature": 0.0006,
+    "damping": 0.02,
+    "frictionloss": 0.005,
+    "actuators": [
+      {
+        "index": 25,
+        "name": "right_wrist_pitch",
+        "via": "direct",
+        "ctrlrange": [
+          -1.3963,
+          1.3963
+        ]
+      }
+    ],
+    "obs_pos_index": 30,
+    "obs_vel_index": 63
+  },
+  "right_wrist_yaw_joint": {
+    "type": "hinge",
+    "body": "right_wrist_yaw_link",
+    "qpos_index": 33,
+    "qvel_index": 32,
+    "link_mass": 0.114,
+    "subtree_mass": 0.114,
+    "range": [
+      -1.3963,
+      1.3963
+    ],
+    "armature": 0.0006,
+    "damping": 0.02,
+    "frictionloss": 0.005,
+    "actuators": [
+      {
+        "index": 26,
+        "name": "right_wrist_yaw",
+        "via": "direct",
+        "ctrlrange": [
+          -1.3963,
+          1.3963
+        ]
+      }
+    ],
+    "obs_pos_index": 31,
+    "obs_vel_index": 64
+  }
+}

@@ -68,7 +68,7 @@ class OpenG1StandEnv(MujocoEnv, utils.EzPickle):
     def _get_obs(self):
         qpos = self.data.qpos.flat[2:]          # drop world x, y
         qvel = self.data.qvel.flat[:]
-        return np.concatenate([qpos, qvel]).astype(np.float64)
+        return np.array(qpos)
 
     # ------------------------------------------------------------------ gym API
     def step(self, action):
